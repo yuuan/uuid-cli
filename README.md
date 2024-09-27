@@ -3,7 +3,7 @@
 ## Installation
 
 ```console
-$ go install github.com/yuuan/uuid-cli
+$ go install github.com/yuuan/uuid-cli@latest
 ```
 
 ## Usage
