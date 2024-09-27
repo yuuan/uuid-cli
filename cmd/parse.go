@@ -24,7 +24,7 @@ func parse(cmd *cobra.Command, args []string) {
 	for _, arg := range args {
 		id, err := uuid.FromString(arg)
 		if err != nil {
-			fmt.Fprintf(os.Stderr, "Parse Error: %v", err)
+			fmt.Fprintf(os.Stderr, "Parse Error: %v\n", err)
 			os.Exit(1)
 		}
 
