@@ -25,6 +25,7 @@ func parse(cmd *cobra.Command, args []string) {
 		id, err := uuid.FromString(arg)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "Parse Error: %v", err)
+			os.Exit(1)
 		}
 
 		if id.Version() == 7 {

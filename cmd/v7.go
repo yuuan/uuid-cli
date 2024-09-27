@@ -65,6 +65,7 @@ func generateV7(cmd *cobra.Command, args []string) {
 		if v7Options.ShowsDetails {
 			if err := printV7Details(id); err != nil {
 				fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+				os.Exit(1)
 			}
 		} else {
 			fmt.Println(id.String())

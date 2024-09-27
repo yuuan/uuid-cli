@@ -43,6 +43,7 @@ func generateV4(cmd *cobra.Command, args []string) {
 		if v4Options.ShowsDetails {
 			if err := printDetails(id); err != nil {
 				fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+				os.Exit(1)
 			}
 		} else {
 			fmt.Println(id.String())
