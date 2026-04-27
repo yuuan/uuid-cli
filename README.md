@@ -2,6 +2,14 @@
 
 ## Installation
 
+### Homebrew
+
+```console
+$ brew install yuuan/tap/uuid-cli
+```
+
+### Go
+
 ```console
 $ go install github.com/yuuan/uuid-cli@latest
 ```
